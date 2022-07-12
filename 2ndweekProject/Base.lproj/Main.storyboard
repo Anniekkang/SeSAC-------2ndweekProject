@@ -41,7 +41,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wJ2-Yy-XPO">
                                                         <rect key="frame" x="0.0" y="141.5" width="117.5" height="29.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-um-bDR">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-um-bDR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="29.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -50,7 +50,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHo-eG-qIH">
                                                                 <rect key="frame" x="69" y="0.0" width="48.5" height="29.5"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="행복해"/>
+                                                                <connections>
+                                                                    <action selector="happyButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="6VE-jA-Ues"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -81,7 +84,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbo-Cc-xs1">
                                                                 <rect key="frame" x="69" y="0.0" width="48.5" height="29.5"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="화났어"/>
+                                                                <connections>
+                                                                    <action selector="angryButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="DcN-5z-8Gp"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -112,7 +118,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zat-ih-AB0">
                                                                 <rect key="frame" x="69" y="0.0" width="48.5" height="29"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="무서워"/>
+                                                                <connections>
+                                                                    <action selector="scaredButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="4m1-1O-XAt"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -148,7 +157,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBl-ff-Z8r">
                                                                 <rect key="frame" x="69" y="0.0" width="49" height="29.5"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="기뻐"/>
+                                                                <connections>
+                                                                    <action selector="pleButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="Rs9-q5-2E6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -179,7 +191,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLX-gI-oPU">
                                                                 <rect key="frame" x="69" y="0.0" width="49" height="29.5"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="당황"/>
+                                                                <connections>
+                                                                    <action selector="embButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="b6R-Tt-Q5i"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -210,7 +225,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meZ-4l-mA9">
                                                                 <rect key="frame" x="69" y="0.0" width="49" height="29"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="시니컬"/>
+                                                                <connections>
+                                                                    <action selector="cyButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="Wgv-5G-qMX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -246,7 +264,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBH-X3-wqQ">
                                                                 <rect key="frame" x="68.5" y="0.0" width="49" height="29.5"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="사랑해"/>
+                                                                <connections>
+                                                                    <action selector="loveButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="Bxx-qm-Ybr"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -277,7 +298,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-a2-kEM">
                                                                 <rect key="frame" x="68.5" y="0.0" width="49" height="29.5"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="안심"/>
+                                                                <connections>
+                                                                    <action selector="reliefButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="53f-pK-Okk"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -308,7 +332,10 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33E-Lq-7EO">
                                                                 <rect key="frame" x="68.5" y="0.0" width="49" height="29"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="슬퍼"/>
+                                                                <connections>
+                                                                    <action selector="sadButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="2GG-qO-Rh7"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -335,24 +362,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="angryButton" destination="tbo-Cc-xs1" id="UHo-AK-QfF"/>
                         <outlet property="angryLabel" destination="iEA-rn-Xf1" id="L5X-5L-bYk"/>
-                        <outlet property="cynicalButton" destination="meZ-4l-mA9" id="TbU-JA-0TG"/>
                         <outlet property="cynicalLabel" destination="RlE-uW-YFn" id="X8H-oM-pee"/>
-                        <outlet property="embarrasedButton" destination="tLX-gI-oPU" id="t86-bQ-8bx"/>
                         <outlet property="embarrasedLabel" destination="Wtu-Qt-OM2" id="0ki-4g-fhU"/>
-                        <outlet property="happyButton" destination="zHo-eG-qIH" id="13M-f0-eK3"/>
                         <outlet property="happyLabel" destination="GtK-um-bDR" id="fGh-Ls-ScF"/>
-                        <outlet property="loveButton" destination="dBH-X3-wqQ" id="0J7-bt-8Qj"/>
                         <outlet property="loveLabel" destination="axx-He-Ai1" id="9ln-FM-59O"/>
                         <outlet property="mainLabel" destination="Hwf-29-F0P" id="gyC-XS-eCm"/>
-                        <outlet property="pleasantButton" destination="eBl-ff-Z8r" id="FdB-qk-yV6"/>
                         <outlet property="pleasantLabel" destination="ylh-pp-zWI" id="No5-2j-CAw"/>
-                        <outlet property="reliefButton" destination="wXz-a2-kEM" id="y9f-0E-FSN"/>
                         <outlet property="reliefLabel" destination="21O-g4-RVZ" id="jeh-8z-ykq"/>
-                        <outlet property="sadButton" destination="33E-Lq-7EO" id="gHr-Dw-HIi"/>
                         <outlet property="sadLabel" destination="EWM-a7-VwW" id="VCa-lV-ALi"/>
-                        <outlet property="scaredButton" destination="Zat-ih-AB0" id="1D5-BA-bac"/>
                         <outlet property="scaredLabel" destination="GG8-wq-io5" id="kmg-rj-lXC"/>
                     </connections>
                 </viewController>
