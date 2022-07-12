@@ -7,49 +7,54 @@
 
 import UIKit
 
-enum MusicType : Int {
-    case all
-    case Korea
-    case other
-}
-
-
 class newViewController: UIViewController {
 
-    @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    @IBOutlet weak var happyLabel: UILabel!
+    @IBOutlet weak var pleasantLabel: UILabel!
+    @IBOutlet weak var loveLabel: UILabel!
+    @IBOutlet weak var angryLabel: UILabel!
+    @IBOutlet weak var embarrasedLabel: UILabel!
+    @IBOutlet weak var reliefLabel: UILabel!
+    @IBOutlet weak var scaredLabel: UILabel!
+    @IBOutlet weak var cynicalLabel: UILabel!
+    @IBOutlet weak var sadLabel: UILabel!
+    
+    
+    @IBOutlet weak var happyButton: UIButton!
+    @IBOutlet weak var pleasantButton: UIButton!
+    @IBOutlet weak var loveButton: UIButton!
+    @IBOutlet weak var angryButton: UIButton!
+    @IBOutlet weak var embarrasedButton: UIButton!
+    @IBOutlet weak var reliefButton: UIButton!
+    @IBOutlet weak var scaredButton: UIButton!
+    @IBOutlet weak var cynicalButton: UIButton!
+    @IBOutlet weak var sadButton: UIButton!
+    
+    
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        segmentControlValuedChanged(segmentControl)
-        
-    }
-    
+        mainLabel.text = "Emotion Diary"
+        mainLabel.textAlignment = .center
+        mainLabel.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
 
-    
-    @IBAction func segmentControlValuedChanged(_ sender: UISegmentedControl) {
-       
-        if segmentControl.selectedSegmentIndex == MusicType.all.rawValue {
-            
-        }
-        
-        
-        
-        
-        
-        if segmentControl.selectedSegmentIndex == 0 {
-            resultLabel.text = "first segment"
-        } else  if segmentControl.selectedSegmentIndex == 1 {
-            resultLabel.text = "second segment"
-        } else if segmentControl.selectedSegmentIndex == 2 {
-            resultLabel.text = "third segment"
-        } else {
-            resultLabel.text = "wrong choice"
-        }
-        
-        
-        
-        
     }
+    
+   
+    
+        
+    
+    
+    
+   
+    
+    
+    
+    
     
 }
