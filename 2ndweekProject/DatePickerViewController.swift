@@ -28,11 +28,20 @@ class DatePickerViewController: UIViewController {
     @IBAction func datepickerAction(_ sender: UIDatePicker) {
         //눌렀을 때 dateLabels에 디데이별 날짜가 나옴
         
+        var chosenLabel = sender.date.formatted(date: .complete, time: .omitted)
         
         
+        for i in 0...3 {
+            dateLabels[i].text! = chosenLabel
+            dateLabels[i].textColor = .white
+            dateLabels[i].font = UIFont.systemFont(ofSize: 15, weight: .heavy)
         
         
-    }
+            }
+          
+    
+        }
+    
     
     func imageSetup(){
         
@@ -51,7 +60,7 @@ class DatePickerViewController: UIViewController {
         }
         
         for i in 0...3 {
-            dateLabels[i].text = Date().formatted(date: .complete, time: .omitted)
+            dateLabels[i].text = ""
             dateLabels[i].textColor = .white
             dateLabels[i].font = UIFont.systemFont(ofSize: 15, weight: .heavy)
         }
@@ -60,12 +69,13 @@ class DatePickerViewController: UIViewController {
 
     }
   
-   
-        
+
+
+}
         
         
        
         
 
     
-}
+
