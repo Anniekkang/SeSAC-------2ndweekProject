@@ -28,17 +28,21 @@ class DatePickerViewController: UIViewController {
     @IBAction func datepickerAction(_ sender: UIDatePicker) {
         //눌렀을 때 dateLabels에 디데이별 날짜가 나옴
         
-        var chosenLabel = sender.date.formatted(date: .complete, time: .omitted)
-        
-        
+    
+     
+        //누른 날짜 나오게 하는 코드
+//        for i in 0...3 {
+//             dateLabels[i].text! = sender.date.formatted(date: .complete, time: .omitted)
+//            dateLabels[i].textColor = .white
+//            dateLabels[i].font = UIFont.systemFont(ofSize: 15, weight: .heavy)
+//            }
+        // 누른 날짜로 부터 디데이 나오는 코드
         for i in 0...3 {
-            dateLabels[i].text! = chosenLabel
+//
             dateLabels[i].textColor = .white
             dateLabels[i].font = UIFont.systemFont(ofSize: 15, weight: .heavy)
-        
-        
-            }
-          
+            dateLabels[i].text! = sender.date.addingTimeInterval(TimeInterval(60 * 60 * 24 * 100 * (i+1))).formatted(date: .complete, time: .omitted)
+        }
     
         }
     
