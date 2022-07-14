@@ -14,18 +14,20 @@ class DatePickerViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet var imageViews : [UIImageView]!
     @IBOutlet var ddayLabels : [UILabel]!
+    //눌렀을 때 디데이별 날짜가 나오는 라벨
     @IBOutlet var dateLabels : [UILabel]!
     
-    @IBOutlet weak var choiceButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         imageSetup()
         labelSetup()
+    }
+    
+    @IBAction func datepickerAction(_ sender: UIDatePicker) {
+        //눌렀을 때 dateLabels에 디데이별 날짜가 나옴
         
-        choiceButton.setTitle("날짜선택", for: .normal)
-        choiceButton.setTitleColor(.purple, for: .normal)
         
         
         
@@ -49,33 +51,21 @@ class DatePickerViewController: UIViewController {
         }
         
         for i in 0...3 {
-            dateLabels[i].text = ""
+            dateLabels[i].text = Date().formatted(date: .complete, time: .omitted)
             dateLabels[i].textColor = .white
-            dateLabels[i].font = UIFont.systemFont(ofSize: 20, weight: .heavy)
+            dateLabels[i].font = UIFont.systemFont(ofSize: 15, weight: .heavy)
         }
+        
+        
 
     }
   
-    @IBAction func buttonAction(_ sender: UIButton) {
-        //dateLabel이 바뀐다 각 디데이에 맞춰서
-        //dateLabels[i] 0...3
-        
-        //choosen date
-        let pickedDate = Date()
-        let currentYear =  Calendar.current.dateComponents([.year], from: pickedDate)
-        let currentMonth = Calendar.current.dateComponents([.month], from: pickedDate)
-        let currentDay = Calendar.current.dateComponents([.day], from: pickedDate)
+   
         
         
         
+       
         
-        print(currentYear)
-        //D-Day
-//        for i in 1...3 {
-//            dateLabels[i] =
-//        }
-//
-        
-    }
+
     
 }

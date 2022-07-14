@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+//    let nickname : String // 왜 안되는지 생각해보기
     
     override func viewDidLoad() {
         super.viewDidLoad()
