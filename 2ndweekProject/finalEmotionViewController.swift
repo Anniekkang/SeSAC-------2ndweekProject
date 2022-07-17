@@ -7,22 +7,18 @@
 
 import UIKit
 
-//protocol Buttons {
-//    func EmotionButtonsAction(_ sender: UIButton)
-//}
-//
-//
 class finalEmotionViewController: UIViewController {
 
     
-    
+    @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet var collectionButtons : [UIButton]!
     @IBOutlet var emotionLabels : [UILabel]!
     var count = [0,0,0,0,0,0,0,0,0]
     
     override func viewDidLoad() {
     super.viewDidLoad()
-
+        
+        mainLabel.text = "감정노트"
         labelSetup()
         
     }
