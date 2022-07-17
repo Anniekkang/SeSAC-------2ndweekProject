@@ -53,6 +53,9 @@
                                 <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="fyQ-ty-7WB" kind="show" id="vyV-mv-Igk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -68,22 +71,23 @@
                             <constraint firstItem="VhE-R2-I6U" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uQv-2K-MO7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VrS-6n-iYw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92.753623188405811" y="78.348214285714278"/>
+            <point key="canvasLocation" x="-123" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--뒤로-->
         <scene sceneID="HE9-X6-bRX">
             <objects>
                 <viewController id="6Vb-D7-tCS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xz3-lP-Y5j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Veq-Jy-74C"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DRm-nD-yhx"/>
+                    <navigationItem key="navigationItem" title="뒤로" id="ZB4-YR-iZP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqa-df-OCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,8 +98,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fyQ-ty-7WB" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rni-bD-s5w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qgs-Dn-1sJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -103,7 +108,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="6Vb-D7-tCS" kind="relationship" relationship="rootViewController" id="Ble-E5-wtA"/>
+                        <segue destination="6Vb-D7-tCS" kind="relationship" relationship="rootViewController" id="Zu4-QJ-b01"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drD-jA-kL9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

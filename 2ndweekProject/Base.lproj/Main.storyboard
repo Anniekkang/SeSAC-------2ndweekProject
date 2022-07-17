@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LMk-ha-yDa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eml-ly-gHM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New View Controller-->
+        <!--Final Emotion View Controller-->
         <scene sceneID="Y6e-w0-rt0">
             <objects>
-                <viewController id="eml-ly-gHM" customClass="newViewController" customModule="_ndweekProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eml-ly-gHM" customClass="finalEmotionViewController" customModule="_ndweekProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zPe-Wu-nxz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,8 +51,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="행복해"/>
                                                                 <connections>
-                                                                    <action selector="happyButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="6VE-jA-Ues"/>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="bGa-Up-BK0"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="Y07-wR-ap4"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -86,8 +85,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="화났어"/>
                                                                 <connections>
-                                                                    <action selector="angryButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="DcN-5z-8Gp"/>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="6Lu-gH-gl1"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="KqB-fe-a38"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -121,8 +119,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="무서워"/>
                                                                 <connections>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="grc-fr-qZd"/>
-                                                                    <action selector="scaredButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="4m1-1O-XAt"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="6zL-Jl-IbC"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -161,7 +158,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="기뻐"/>
                                                                 <connections>
-                                                                    <action selector="pleButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="Rs9-q5-2E6"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="NrX-77-MzY"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -195,8 +192,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="당황"/>
                                                                 <connections>
-                                                                    <action selector="embButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="b6R-Tt-Q5i"/>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="1Cb-f6-JaO"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="YLX-E1-YmG"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -230,8 +226,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="시니컬"/>
                                                                 <connections>
-                                                                    <action selector="cyButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="Wgv-5G-qMX"/>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="yEq-wd-nLN"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="MaD-Mj-t7T"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -270,8 +265,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="사랑해"/>
                                                                 <connections>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="Hhr-xD-Zrp"/>
-                                                                    <action selector="loveButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="Bxx-qm-Ybr"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="zyD-z0-H3F"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -305,8 +299,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="안심"/>
                                                                 <connections>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="dcP-Sl-v6z"/>
-                                                                    <action selector="reliefButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="53f-pK-Okk"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="cRM-cb-2Bb"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -340,8 +333,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="슬퍼"/>
                                                                 <connections>
-                                                                    <action selector="labelButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="wLA-iU-Iu0"/>
-                                                                    <action selector="sadButton:" destination="eml-ly-gHM" eventType="touchUpInside" id="2GG-qO-Rh7"/>
+                                                                    <action selector="emotionButtons:" destination="eml-ly-gHM" eventType="touchUpInside" id="hyv-xb-cfK"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -369,16 +361,24 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="angryLabel" destination="iEA-rn-Xf1" id="L5X-5L-bYk"/>
-                        <outlet property="cynicalLabel" destination="RlE-uW-YFn" id="X8H-oM-pee"/>
-                        <outlet property="embarrasedLabel" destination="Wtu-Qt-OM2" id="0ki-4g-fhU"/>
-                        <outlet property="happyLabel" destination="GtK-um-bDR" id="fGh-Ls-ScF"/>
-                        <outlet property="loveLabel" destination="axx-He-Ai1" id="9ln-FM-59O"/>
-                        <outlet property="mainLabel" destination="Hwf-29-F0P" id="gyC-XS-eCm"/>
-                        <outlet property="pleasantLabel" destination="ylh-pp-zWI" id="No5-2j-CAw"/>
-                        <outlet property="reliefLabel" destination="21O-g4-RVZ" id="jeh-8z-ykq"/>
-                        <outlet property="sadLabel" destination="EWM-a7-VwW" id="VCa-lV-ALi"/>
-                        <outlet property="scaredLabel" destination="GG8-wq-io5" id="kmg-rj-lXC"/>
+                        <outletCollection property="emotionLabels" destination="GtK-um-bDR" collectionClass="NSMutableArray" id="OLJ-Mc-nxV"/>
+                        <outletCollection property="emotionLabels" destination="ylh-pp-zWI" collectionClass="NSMutableArray" id="0Pq-V5-XMx"/>
+                        <outletCollection property="emotionLabels" destination="axx-He-Ai1" collectionClass="NSMutableArray" id="guC-lN-6Ck"/>
+                        <outletCollection property="emotionLabels" destination="iEA-rn-Xf1" collectionClass="NSMutableArray" id="xlx-SO-OMV"/>
+                        <outletCollection property="emotionLabels" destination="Wtu-Qt-OM2" collectionClass="NSMutableArray" id="iAJ-E5-qfg"/>
+                        <outletCollection property="emotionLabels" destination="21O-g4-RVZ" collectionClass="NSMutableArray" id="Idm-6w-dNq"/>
+                        <outletCollection property="emotionLabels" destination="GG8-wq-io5" collectionClass="NSMutableArray" id="trm-Op-4rl"/>
+                        <outletCollection property="emotionLabels" destination="RlE-uW-YFn" collectionClass="NSMutableArray" id="AxK-LS-AjV"/>
+                        <outletCollection property="emotionLabels" destination="EWM-a7-VwW" collectionClass="NSMutableArray" id="Frf-UF-S2I"/>
+                        <outletCollection property="collectionButtons" destination="zHo-eG-qIH" collectionClass="NSMutableArray" id="KcV-VQ-CTY"/>
+                        <outletCollection property="collectionButtons" destination="eBl-ff-Z8r" collectionClass="NSMutableArray" id="r9z-JS-FvM"/>
+                        <outletCollection property="collectionButtons" destination="dBH-X3-wqQ" collectionClass="NSMutableArray" id="Ezd-Px-ns0"/>
+                        <outletCollection property="collectionButtons" destination="tbo-Cc-xs1" collectionClass="NSMutableArray" id="0zb-fW-FDg"/>
+                        <outletCollection property="collectionButtons" destination="tLX-gI-oPU" collectionClass="NSMutableArray" id="weL-iA-n58"/>
+                        <outletCollection property="collectionButtons" destination="wXz-a2-kEM" collectionClass="NSMutableArray" id="pzr-aJ-su6"/>
+                        <outletCollection property="collectionButtons" destination="Zat-ih-AB0" collectionClass="NSMutableArray" id="U3v-RU-XSj"/>
+                        <outletCollection property="collectionButtons" destination="meZ-4l-mA9" collectionClass="NSMutableArray" id="6bJ-Ib-lhv"/>
+                        <outletCollection property="collectionButtons" destination="33E-Lq-7EO" collectionClass="NSMutableArray" id="34q-95-Kkb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOh-WL-8eO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
