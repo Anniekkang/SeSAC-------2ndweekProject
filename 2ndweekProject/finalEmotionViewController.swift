@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class finalEmotionViewController: UIViewController {
 
     
@@ -20,7 +21,9 @@ class finalEmotionViewController: UIViewController {
         
         mainLabel.text = "감정노트"
         labelSetup()
-        
+        for i in 0...8 {
+            emotionLabels[i].text = "\(UserDefaults.standard.integer(forKey: "key"))"
+        }
     }
     
     
@@ -36,8 +39,27 @@ class finalEmotionViewController: UIViewController {
     @IBAction func emotionButtons(_ sender: UIButton) {
         if let index = collectionButtons.index(of: sender) {
         count[index] += 1
-            emotionLabels[index].text = "\(count[index])"}
-            
-        }
+            emotionLabels[index].text = "\(count[index])"
+
+            }
+        let currentValue = UserDefaults.standard.integer(forKey: "key")
+        UserDefaults.standard.set(currentValue, forKey: "key")
+        
+        
+    }
+    
+     
 
 }
+
+//let currentValue = UserDefaults.standard.integer(forKey: "happyEmotion")
+////감정 + 1
+//let updateValue = currentValue + 1
+//
+////새로운 값 저장
+//UserDefaults.standard.set(updateValue, forKey: "happyEmotion")
+//
+////레이블에 새로운 내용 보여주기
+//emotionButtonLabel.text = "\(UserDefaults.standard.integer(forKey: "happyEmotion"))"
+//
+//UserDefaults.standard.set(updateValue, forKey: "happyEmotion")

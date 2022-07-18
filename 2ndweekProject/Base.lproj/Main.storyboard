@@ -361,6 +361,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mainLabel" destination="Hwf-29-F0P" id="weS-2R-S5C"/>
                         <outletCollection property="emotionLabels" destination="GtK-um-bDR" collectionClass="NSMutableArray" id="OLJ-Mc-nxV"/>
                         <outletCollection property="emotionLabels" destination="ylh-pp-zWI" collectionClass="NSMutableArray" id="0Pq-V5-XMx"/>
                         <outletCollection property="emotionLabels" destination="axx-He-Ai1" collectionClass="NSMutableArray" id="guC-lN-6Ck"/>
